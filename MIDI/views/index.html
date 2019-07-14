@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+        <title>My page</title>
+		<meta charset="UTF-8"/>
+        
+	</head>	
+	<body>	<h1>My custom midi keyboard</h1>
+                <div id="topmidi">
+                        <canvas id="visualizer"></canvas>
+                        
+                        <input type = "range" class = "inputs" min = "-9" max = "9" id = "freq60"/>
+                        <input type = "range" class = "inputs" min = "-9" max = "9" id = "freq230"/>
+                        <input type = "range" class = "inputs" min = "-9" max = "9" id = "freq910"/>
+                        <input type = "range" class = "inputs" min = "-9" max = "9" id = "freq3000"/>
+                        <input type = "range" class = "inputs" min = "-9" max = "9" id = "freq10000"/>
+                        <input type = "range" class = "inputs" min = "-9" max = "9" id = "freq15000"/>
+                        
+                </div>              </br>        
+                <div id="downmidi">
+                        <canvas id="drumCanv"></canvas>
+                        <canvas id="midiCanv"></canvas>
+                </div>
+                <script src = "./jquery.js"></script>
+                <script src = "./jcanvas.js"></script>
+                <script src="index.js"></script>
+                
+	</body>
+</html>
+<style>
+body {
+        background-color: #333;
+    }
+#topmidi{
+        min-height: 256px;
+        display: inline;
+}
+#drumCanv {
+        background-color: white;
+}
+#midiCanv{
+        background-color: white;
+}
+#downmidi{
+        display: inline;
+}
+#visualizer{
+        background-color: white;
+        height: 256px;
+        width: 1024px;
+}
+.inputs{
+        vertical-align: top;
+        transform: rotate(90deg);
+        height: 200px;
+        margin: 0px;
+        margin-bottom: -1000px;
+}
+h1{
+        text-align: center;
+        color: white;
+}
+</style>
